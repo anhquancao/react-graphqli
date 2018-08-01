@@ -5,7 +5,7 @@ import "./index.css";
 import registerServiceWorker from './registerServiceWorker';
 import GraphiQL from 'graphiql';
 
-const host = "http://localhost:8000";
+const host = window.host;
 
 function graphQLFetcher(graphQLParams) {
     // return fetch(host + '/graphql', {
